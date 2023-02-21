@@ -3,7 +3,7 @@ const apiKeyAirtable = 'keyRFvlmZQa6XPoZY';
 const baseId = 'appkuZjDcBLkMOjjm';
 const tableName = 'tblQaOddLWYQfvIpP';
 
-
+let campaign;
 let ip;
 let isp;
 let lat;
@@ -43,7 +43,6 @@ function fetchData() {
         fetch(`https://geo.ipify.org/api/v2/country,city,vpn?apiKey=${apiKeyIpify}`)
             .then(response => response.json())
             .then(data => {
-                id = '1';
                 ip = data.ip;
                 isp = data.isp;
                 lat = data.location.lat;
@@ -61,6 +60,7 @@ function fetchData() {
 
                 fieldfills = {
                     fields: {
+                        'campaign': 'handmadeartgifts',
                         'ip': ip,
                         'isp': isp,
                         'lat': lat,
@@ -107,7 +107,7 @@ fetchData().then(() => {
     })
         .then(response => {
             console.log(response.data);
-            location.href = "https://shop.smallpetselect.com/pages/rabbit-products";
+            location.href = "https://www.etsy.com/listing/1027271975/scrimshaw-rigging-knife-with-hula-dancer";
 
         })
         .catch(error => {
