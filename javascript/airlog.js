@@ -1,7 +1,3 @@
-const apiKeyIpify = 'at_CD4AT2P2KkItw9UPVyaTOOPRX0dpF';
-const apiKeyAirtable = 'keyRFvlmZQa6XPoZY';
-const baseId = 'appkuZjDcBLkMOjjm';
-const tableName = 'tblQaOddLWYQfvIpP';
 
 let campaign;
 let ip;
