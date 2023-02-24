@@ -1,4 +1,8 @@
 
+const apiKeyIpify = 'at_CD4AT2P2KkItw9UPVyaTOOPRX0dpF';
+const baseId = 'appkuZjDcBLkMOjjm';
+const tableName = 'tblQaOddLWYQfvIpP';
+
 let campaign;
 let ip;
 let isp;
@@ -97,7 +101,7 @@ fetchData().then(() => {
 fetchData().then(() => {
     axios.post(`https://api.airtable.com/v0/${baseId}/${tableName}`, fieldfills, {
         headers: {
-            Authorization: `Bearer ${apiKeyAirtable}`,
+            Authorization: `Bearer pat4NXfuBDE36jDhR.54b830dd7fea714a54ae242ce5ae4ff85e79e6fbb0160dc5acc53ceb736f3e24`,
             'Content-Type': 'application/json'
         }
     })
